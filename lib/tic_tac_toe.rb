@@ -92,6 +92,9 @@ WIN_COMBINATIONS = [
 
   def play
     turn until over?
+    if won?
+      puts "Congratulations #{winner}!"
+    end
   end
 
 end
